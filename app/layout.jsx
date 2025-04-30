@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 
 
 
-
 import { ThemeModeScript } from 'flowbite-react';
 
 export default function RootLayout({ children }) {

@@ -22,7 +22,15 @@
 }
 
 body {
-  background: white;
+  background-color: white;
+  background-image: url('https://www.supercook.com/statics/images/onboarding-bg.svg');
+  background-size: 300px;
+  background-repeat: repeat;
+  background-position: top left;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+
