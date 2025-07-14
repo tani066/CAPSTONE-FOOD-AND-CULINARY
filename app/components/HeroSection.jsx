@@ -85,7 +85,7 @@ const HeroSection = () => {
       </div>
 
       {/* AI Feature Section */}
-      <div className="px-6 py-12 bg-gradient-to-br from-orange-50 to-yellow-100">
+      <div className="px-6 py-12 bg-gradient-to-br from-orange-50 to-yellow-100 w-[90vw] m-auto rounded-3xl border border-[#cbe44d]">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-serif text-[#734060] mb-6">Discover AI-Powered Recipe Magic</h2>
           <p className="text-gray-700 mb-8 max-w-2xl mx-auto">Transform your available ingredients into delicious meals with our AI chef. Get personalized recipe suggestions tailored to your preferences and pantry.</p>
@@ -111,6 +111,9 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Dessert Showcase Section */}
+      
     </div>
   );
 };
