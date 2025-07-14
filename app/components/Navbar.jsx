@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
-import { PiForkKnifeDuotone, PiShoppingCartSimpleBold } from 'react-icons/pi';
+import { PiForkKnifeDuotone, PiShoppingCartSimpleBold, PiRobotBold } from 'react-icons/pi';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from 'flowbite-react';
 import { useRouter } from 'next/navigation';
@@ -133,8 +133,15 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* Cart & User Section */}
+          {/* Cart, AI & User Section */}
           <div className="flex items-center gap-4">
+            <button
+              onClick={() => router.push('/pages/ask-ai')}
+              className="text-white hover:text-yellow-200 transition-colors duration-200 flex items-center gap-2 px-3 py-1 rounded-md border border-white/30 hover:border-yellow-200"
+            >
+              <PiRobotBold className="w-5 h-5" />
+              <span className="hidden sm:inline">Ask AI</span>
+            </button>
             { (
               <div className="relative" ref={cartRef}>
                 <button

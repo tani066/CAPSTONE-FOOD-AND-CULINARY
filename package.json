@@ -10,6 +10,7 @@
     "postinstall": "flowbite-react patch"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.3.0",
     "clsx": "^2.1.1",
     "dotenv": "^17.2.0",
     "firebase": "^11.10.0",
@@ -17,6 +18,7 @@
     "framer-motion": "^12.9.2",
     "lucide-react": "^0.525.0",
     "next": "15.3.1",
+    "openai": "^5.9.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.2",
