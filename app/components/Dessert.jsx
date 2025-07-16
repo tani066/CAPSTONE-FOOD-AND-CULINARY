@@ -236,7 +236,7 @@ export default function DessertsRecipes() {
                       <h3 className="text-xl font-bold mb-4 text-orange-600">Ingredients</h3>
                       <ul className="list-disc pl-6">
                         {selectedRecipe.extendedIngredients.map((ing) => (
-                          <li key={ing.id}>{ing.original}</li>
+                          <li className='text-black' key={ing.id}>{ing.original}</li>
                         ))}
                       </ul>
                     </div>
@@ -247,7 +247,7 @@ export default function DessertsRecipes() {
                       <h3 className="text-xl font-bold mb-4 text-orange-600">Instructions</h3>
                       <ol className="list-decimal pl-6 space-y-2">
                         {selectedRecipe.analyzedInstructions[0].steps.map((step) => (
-                          <li key={step.number}>{step.step}</li>
+                          <li className='text-black' key={step.number}>{step.step}</li>
                         ))}
                       </ol>
                     </div>

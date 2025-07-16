@@ -87,7 +87,7 @@ export default function Navbar() {
               alt="Logo"
               className="h-8 w-8"
             />
-            <span className="text-white italic text-xl sm:text-2xl font-semibold">
+            <span onClick={() => router.push('/')} className="text-white italic text-xl sm:text-2xl font-semibold cursor-pointer">
               Cook & Crafted
             </span>
           </div>

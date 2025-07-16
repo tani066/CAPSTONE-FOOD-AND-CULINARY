@@ -4,6 +4,7 @@ import { ThemeModeScript } from 'flowbite-react';
 import Navbar from "./components/Navbar";
 import { AuthProvider } from './context/AuthContext';
 import { Toaster } from 'react-hot-toast';
+import Footer from "./components/Footer";
 
 export default function RootLayout({ children }) {
     return (
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
                     },
                   }}
                 />
+              <Footer/>
               </AuthProvider>
             </body>
         </html>

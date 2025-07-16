@@ -9,7 +9,7 @@ export default function Dashboard() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen p-6 bg-gradient-to-br from-orange-50 to-yellow-100">
+    <div className="min-h-screen p-6 ">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold text-center text-orange-600 font-serif mb-12">
           🍽️ Your Recipe Dashboard

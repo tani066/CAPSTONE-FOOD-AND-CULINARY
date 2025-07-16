@@ -14,7 +14,7 @@ const Homepage = () => {
         <RandomRecipeCard/>
         <AboutUs/>
       </main>
-      <Footer/>
+      
     </div>
   )
 }

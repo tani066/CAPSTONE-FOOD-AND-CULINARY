@@ -247,7 +247,7 @@ const handleSave = async (recipe) => {
                         {selectedRecipe.extendedIngredients.map((ing) => (
                           <li key={ing.id} className="flex gap-2">
                             <span className="text-orange-500">•</span>
-                            <span>{ing.original}</span>
+                            <span className='text-black'>{ing.original}</span>
                           </li>
                         ))}
                       </ul>
