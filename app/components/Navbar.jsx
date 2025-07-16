@@ -10,6 +10,7 @@ import { useAuth } from '@/app/context/AuthContext';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import toast from 'react-hot-toast';
+import Dashboard from '../pages/dashboard/page';
 
 export default function Navbar() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -22,7 +23,25 @@ export default function Navbar() {
   const dropdownRef = useRef(null);
   const cartRef = useRef(null);
 
-  const navLinks = ['Home', 'About', 'Services', 'Pricing', 'Contact'];
+  const navLinks = ['Home', 'About', 'Dashboard', 'Contact'];
+
+  const handleNavigation = (link) => {
+    setActiveLink(link);
+    if (link === 'Dashboard') {
+      router.push('/pages/dashboard');
+    } else if (link === 'Home') {
+      router.push('/');
+    } else {
+      router.push(`/#${link.toLowerCase()}`);
+      setTimeout(() => {
+        const element = document.getElementById(link.toLowerCase());
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  };
+
 
   // Close dropdowns on outside click
   useEffect(() => {
@@ -120,7 +139,10 @@ export default function Navbar() {
               <li key={link}>
                 <a
                   href="#"
-                  onClick={() => setActiveLink(link)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavigation(link);
+                  }}
                   className={`px-3 py-1 rounded-md transition-colors duration-200 ${
                     activeLink === link
                       ? 'bg-white text-[#D8456B] font-semibold shadow-md'
@@ -312,8 +334,9 @@ export default function Navbar() {
                     <li key={link}>
                       <a
                         href="#"
-                        onClick={() => {
-                          setActiveLink(link);
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handleNavigation(link);
                           setMenuOpen(false);
                         }}
                         className={`block px-4 py-2 rounded-md transition ${

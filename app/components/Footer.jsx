@@ -3,8 +3,21 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 export default function Footer() {
+  const router = useRouter();
+
+  const handleNavigation = (link) => {
+    if (link.startsWith('#')) {
+      const element = document.getElementById(link.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      router.push(link);
+    }
+  };
   return (
     <footer className="bg-gradient-to-r from-[#734060] to-[#D8456B] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -51,13 +64,37 @@ export default function Footer() {
                 <Link href="/" className="text-white/80 hover:text-white transition-colors">Home</Link>
               </li>
               <li>
-                <Link href="/recipes" className="text-white/80 hover:text-white transition-colors">Recipes</Link>
+                <Link href="/pages/recipes" className="text-white/80 hover:text-white transition-colors">Recipes</Link>
+              </li>
+              <li>
+                <Link href="/pages/dashboard" className="text-white/80 hover:text-white transition-colors">Dashboard</Link>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavigation('#contact');
+                  }}
+                  className="text-white/80 hover:text-white transition-colors cursor-pointer"
+                >
+                  Contact
+                </a>
               </li>
               <li>
                 <Link href="/pages/ask-ai" className="text-white/80 hover:text-white transition-colors">Ask AI</Link>
               </li>
               <li>
-                <Link href="#about" className="text-white/80 hover:text-white transition-colors">About Us</Link>
+                <a
+                  href="#about"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavigation('#about');
+                  }}
+                  className="text-white/80 hover:text-white transition-colors cursor-pointer"
+                >
+                  About Us
+                </a>
               </li>
             </ul>
           </div>

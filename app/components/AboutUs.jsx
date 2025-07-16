@@ -14,7 +14,7 @@ export default function AboutUs() {
   ];
 
   return (
-    <section className="relative bg-gradient-to-br from-orange-50 via-rose-50 to-yellow-100 w-full px-6 py-24 overflow-hidden">
+    <section id="about" className="relative bg-gradient-to-br from-orange-50 via-rose-50 to-yellow-100 w-full px-6 py-24 overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
       <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
@@ -122,7 +122,9 @@ export default function AboutUs() {
           animation-delay: 4s;
         }
       `}</style>
-      <ContactUs/>
+      <div id="contact">
+        <ContactUs/>
+      </div>
     </section>
   );
 }
