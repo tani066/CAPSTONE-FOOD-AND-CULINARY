@@ -1,6 +1,18 @@
 import React from 'react'
+import { useRouter } from 'next/navigation';
+import { useAuth } from '../context/AuthContext';
 
 const HomeDessert = () => {
+  const router = useRouter();
+  const { user } = useAuth();
+
+  const handleRoute = () => {
+    if (!user) {
+      router.push('/auth/signup');
+    } else {
+      router.push('/pages/recipes?tab=dessert');
+    }         
+  };
   return (
     <section className=" w-full px-4 py-20 text-zinc-900 font-sans">
     <div className="px-6 py-16 bg-gradient-to-br from-pink-50 to-rose-100 rounded-3xl w-[90vw] m-auto border border-[#efc5f5]">

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Button, Label, TextInput, Alert } from 'flowbite-react';
 import { useAuth } from '@/app/context/AuthContext';
 import { useRouter } from 'next/navigation';
+import toast from 'react-hot-toast';
 
 export default function SignInPage() {
   const { login } = useAuth();
@@ -24,8 +25,9 @@ export default function SignInPage() {
         setError(result.error || 'Failed to sign in');
       }
     } catch (err) {
-      toast.error(err.message || 'An error occurred during sign in');
-      setError(err.message);
+      const errorMessage = err.message || 'An error occurred during sign in';
+      toast.error(errorMessage);
+      setError(errorMessage);
     }
   };
 

@@ -31,14 +31,11 @@ export default function Navbar() {
       router.push('/pages/dashboard');
     } else if (link === 'Home') {
       router.push('/');
-    } else {
-      router.push(`/#${link.toLowerCase()}`);
-      setTimeout(() => {
-        const element = document.getElementById(link.toLowerCase());
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
+    } else if (link === 'About' || link === 'Contact') {
+      const element = document.getElementById(link.toLowerCase());
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 

@@ -32,7 +32,7 @@ export default function Footer() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                href="#"
+                href="/"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
@@ -104,16 +104,16 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Categories</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/recipes?category=breakfast" className="text-white/80 hover:text-white transition-colors">Breakfast</Link>
+                <Link href="/pages/recipes?tab=breakfast" className="text-white/80 hover:text-white transition-colors">Breakfast</Link>
               </li>
               <li>
-                <Link href="/recipes?category=lunch" className="text-white/80 hover:text-white transition-colors">Lunch</Link>
+                <Link href="/pages/recipes?tab=lunch" className="text-white/80 hover:text-white transition-colors">Lunch</Link>
               </li>
               <li>
-                <Link href="/recipes?category=dinner" className="text-white/80 hover:text-white transition-colors">Dinner</Link>
+                <Link href="/pages/recipes?tab=dinner" className="text-white/80 hover:text-white transition-colors">Dinner</Link>
               </li>
               <li>
-                <Link href="/recipes?category=desserts" className="text-white/80 hover:text-white transition-colors">Desserts</Link>
+                <Link href="/pages/recipes?tab=desserts" className="text-white/80 hover:text-white transition-colors">Desserts</Link>
               </li>
             </ul>
           </div>
@@ -126,10 +126,10 @@ export default function Footer() {
               © 2024 Cook & Crafted. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="/privacy" className="text-white/60 hover:text-white text-sm transition-colors">
+              <Link href="/" className="text-white/60 hover:text-white text-sm transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-white/60 hover:text-white text-sm transition-colors">
+              <Link href="/" className="text-white/60 hover:text-white text-sm transition-colors">
                 Terms of Service
               </Link>
             </div>

@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
     return (
         <html suppressHydrationWarning>
             <head>
-                <ThemeModeScript />
+                {/* <ThemeModeScript /> */}
             </head>
             <body>
               <AuthProvider>
