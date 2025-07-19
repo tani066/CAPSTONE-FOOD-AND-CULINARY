@@ -27,7 +27,7 @@ export default function Navbar() {
   const handleNavigation = (link) => {
     setActiveLink(link);
     if (link === 'Dashboard') {
-      router.push('/pages/dashboard');
+      router.push('https://capstone-food-and-culinary.vercel.app/pages/dashboard');
     } else if (link === 'Home') {
       router.push('/');
     } else if (link === 'About' || link === 'Contact') {
