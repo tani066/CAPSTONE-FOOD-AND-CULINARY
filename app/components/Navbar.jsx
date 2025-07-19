@@ -10,7 +10,6 @@ import { useAuth } from '@/app/context/AuthContext';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import toast from 'react-hot-toast';
-import Dashboard from '../pages/dashboard/page';
 
 export default function Navbar() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
