@@ -93,16 +93,16 @@ export default function Navbar() {
       </div>
 
       {/* Navbar */}
-      <nav className="bg-[#D8456B] px-4 py-6 md:px-8 shadow-md">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between">
+      <nav className="bg-[#D8456B] px-2 sm:px-4 md:px-8 py-4 md:py-6 shadow-md">
+        <div className="container mx-auto flex flex-wrap items-center justify-between space-y-2 md:space-y-0">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
+              src="/logo1.png"
               alt="Logo"
-              className="h-8 w-8"
+              className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
             />
-            <span onClick={() => router.push('/')} className="text-white italic text-xl sm:text-2xl font-semibold cursor-pointer">
+            <span onClick={() => router.push('/')} className="text-white italic text-lg sm:text-xl md:text-2xl font-semibold cursor-pointer whitespace-nowrap">
               Cook & Crafted
             </span>
           </div>
@@ -152,10 +152,10 @@ export default function Navbar() {
           </ul>
 
           {/* Cart, AI & User Section */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
             <button
               onClick={() => router.push('/ask-ai')}
-              className="text-white hover:text-yellow-200 transition-colors duration-200 flex items-center gap-2 px-3 py-1 rounded-md border border-white/30 hover:border-yellow-200"
+              className="text-white hover:text-yellow-200 transition-colors duration-200 flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 rounded-md border border-white/30 hover:border-yellow-200 text-sm sm:text-base"
             >
               <PiRobotBold className="w-5 h-5" />
               <span className="hidden sm:inline">Ask AI</span>

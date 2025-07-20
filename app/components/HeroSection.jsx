@@ -21,7 +21,7 @@ const HeroSection = () => {
       <section className="text-center px-6 py-12 max-w-screen-xl mx-auto">
         <p className="text-xl sm:text-2xl md:text-3xl text-gray-800 font-light mb-6">
           Simple recipes made for
-          <span className="block sm:inline text-[#734060] font-serif text-2xl sm:text-3xl md:text-4xl ml-1">
+          <span className="block sm:inline text-[#734060] font-serif text-4xl sm:text-3xl md:text-5xl ml-1 shadows-into-light-regular">
             real, actual, everyday life.
           </span>
         </p>
