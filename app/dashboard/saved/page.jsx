@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { collection, getDocs, deleteDoc, doc } from 'firebase/firestore';
-import { db } from '../../../firebase';
+import { db } from '../../firebase';
 import { getAuth } from 'firebase/auth';
 import toast from 'react-hot-toast';
 

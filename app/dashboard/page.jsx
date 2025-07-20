@@ -17,7 +17,7 @@ export default function Dashboard() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Liked Recipes Card */}
-          <Card onClick={() => router.push('/pages/dashboard/liked')} className="hover:bg-orange-50 border border-orange-200">
+          <Card onClick={() => router.push('/dashboard/liked')} className="hover:bg-orange-50 border border-orange-200">
             <div className="flex items-center gap-4">
               <div className="bg-red-100 text-red-600 p-4 rounded-full">
                 <Heart className="w-8 h-8" />
@@ -30,7 +30,7 @@ export default function Dashboard() {
           </Card>
 
           {/* Saved Recipes Card */}
-          <Card onClick={() => router.push('/pages/dashboard/saved')} className="hover:bg-orange-50 border border-orange-200">
+          <Card onClick={() => router.push('/dashboard/saved')} className="hover:bg-orange-50 border border-orange-200">
             <div className="flex items-center gap-4">
               <div className="bg-yellow-100 text-yellow-600 p-4 rounded-full">
                 <Bookmark className="w-8 h-8" />
