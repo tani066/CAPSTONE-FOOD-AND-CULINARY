@@ -64,10 +64,10 @@ export default function Footer() {
                 <Link href="/" className="text-white/80 hover:text-white transition-colors">Home</Link>
               </li>
               <li>
-                <Link href="/pages/recipes" className="text-white/80 hover:text-white transition-colors">Recipes</Link>
+                <Link href="/recipes" className="text-white/80 hover:text-white transition-colors">Recipes</Link>
               </li>
               <li>
-                <Link href="/pages/dashboard" className="text-white/80 hover:text-white transition-colors">Dashboard</Link>
+                <Link href="/dashboard" className="text-white/80 hover:text-white transition-colors">Dashboard</Link>
               </li>
               <li>
                 <a
@@ -82,7 +82,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <Link href="/pages/ask-ai" className="text-white/80 hover:text-white transition-colors">Ask AI</Link>
+                <Link href="/ask-ai" className="text-white/80 hover:text-white transition-colors">Ask AI</Link>
               </li>
               <li>
                 <a
@@ -104,16 +104,16 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Categories</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/pages/recipes?tab=breakfast" className="text-white/80 hover:text-white transition-colors">Breakfast</Link>
+                <Link href="/recipes?tab=breakfast" className="text-white/80 hover:text-white transition-colors">Breakfast</Link>
               </li>
               <li>
-                <Link href="/pages/recipes?tab=lunch" className="text-white/80 hover:text-white transition-colors">Lunch</Link>
+                <Link href="/recipes?tab=lunch" className="text-white/80 hover:text-white transition-colors">Lunch</Link>
               </li>
               <li>
-                <Link href="/pages/recipes?tab=dinner" className="text-white/80 hover:text-white transition-colors">Dinner</Link>
+                <Link href="/recipes?tab=dinner" className="text-white/80 hover:text-white transition-colors">Dinner</Link>
               </li>
               <li>
-                <Link href="/pages/recipes?tab=desserts" className="text-white/80 hover:text-white transition-colors">Desserts</Link>
+                <Link href="/recipes?tab=desserts" className="text-white/80 hover:text-white transition-colors">Desserts</Link>
               </li>
             </ul>
           </div>

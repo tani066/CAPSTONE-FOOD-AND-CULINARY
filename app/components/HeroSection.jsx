@@ -12,7 +12,7 @@ const HeroSection = () => {
     if (!user) {
       router.push('/auth/signup');
     } else {
-      router.push(`/pages/recipes?tab=${tab}`);
+      router.push(`/recipes?tab=${tab}`);
     }
   };
 
@@ -31,7 +31,7 @@ const HeroSection = () => {
             if (!user) {
               router.push('/auth/signin');
             } else {
-              router.push('/pages/recipes?tab=breakfast');
+              router.push('/recipes?tab=breakfast');
             }
           }}
           className="inline-flex items-center gap-2 px-6 py-3 bg-[#D8456B] hover:bg-[#c53c5f] text-white text-lg rounded-full transition duration-300 shadow-md cursor-pointer"
@@ -96,7 +96,7 @@ const HeroSection = () => {
           <h2 className="text-3xl md:text-4xl font-serif text-[#734060] mb-6">Discover AI-Powered Recipe Magic</h2>
           <p className="text-gray-700 mb-8 max-w-2xl mx-auto">Transform your available ingredients into delicious meals with our AI chef. Get personalized recipe suggestions tailored to your preferences and pantry.</p>
           
-          <div className="max-w-md mx-auto cursor-pointer" onClick={() => router.push('/pages/ask-ai')}>
+          <div className="max-w-md mx-auto cursor-pointer" onClick={() => router.push('/ask-ai')}>
             <div className="bg-white rounded-2xl shadow-lg p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-[#D8456B] to-[#734060] rounded-full">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -117,9 +117,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-
-      {/* Dessert Showcase Section */}
-      {/* <HomeDessert /> */}
       
     </div>
   );

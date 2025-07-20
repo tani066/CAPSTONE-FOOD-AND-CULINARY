@@ -10,7 +10,7 @@ const HomeDessert = () => {
     if (!user) {
       router.push('/auth/signup');
     } else {
-      router.push('/pages/recipes?tab=dessert');
+      router.push('/recipes?tab=dessert');
     }         
   };
   return (

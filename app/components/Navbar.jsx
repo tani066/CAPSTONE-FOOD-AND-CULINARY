@@ -27,7 +27,7 @@ export default function Navbar() {
   const handleNavigation = (link) => {
     setActiveLink(link);
     if (link === 'Dashboard') {
-      router.push('/pages/dashboard');
+      router.push('/dashboard');
     } else if (link === 'Home') {
       router.push('/');
     } else if (link === 'About' || link === 'Contact') {
@@ -154,7 +154,7 @@ export default function Navbar() {
           {/* Cart, AI & User Section */}
           <div className="flex items-center gap-4">
             <button
-              onClick={() => router.push('/pages/ask-ai')}
+              onClick={() => router.push('/ask-ai')}
               className="text-white hover:text-yellow-200 transition-colors duration-200 flex items-center gap-2 px-3 py-1 rounded-md border border-white/30 hover:border-yellow-200"
             >
               <PiRobotBold className="w-5 h-5" />
@@ -294,7 +294,7 @@ export default function Navbar() {
                                     router.push('/');
                                   }
                                   else if (item === 'Dashboard') {
-                                    router.push('/pages/dashboard');
+                                    router.push('/dashboard');
                                   }
                                 }}
                                 className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition"
