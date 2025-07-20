@@ -53,7 +53,7 @@ const HeroSection = () => {
       },
       {
         title: 'Lunch Recipes',
-        img: 'https://pinchofyum.com/cdn-cgi/image/width=360,height=514,fit=crop/wp-content/uploads/Carrot-Cake-Coffee-Cake-1.jpg',
+        img: 'https://pinchofyum.com/wp-content/uploads/Brandons-Egg-Roll-Tacos-1-3.jpg',
         tab: 'lunch',
       },
       {
@@ -63,7 +63,7 @@ const HeroSection = () => {
       },
       {
         title: 'Dinner Recipes',
-        img: 'https://pinchofyum.com/cdn-cgi/image/width=360,height=514,fit=crop/wp-content/uploads/Crispy-Chicken-Cutlets-on-Plate.jpg',
+        img: 'https://pinchofyum.com/cdn-cgi/image/width=360,height=514,fit=crop/wp-content/uploads/Shrimp-Curry-with-Crispy-Shallots.jpg',
         tab: 'dinner',
       },
     ].map(({ title, img, tab }) => (
@@ -75,7 +75,7 @@ const HeroSection = () => {
         <img
           src={img}
           alt={title}
-          className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-500"
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-500"></div>
